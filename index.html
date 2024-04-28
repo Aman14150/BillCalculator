@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <img class="mainimg" src="1000_F_209872655_wal7SHbmwb5dMdvhe14ie4JvyAn4KiQ6.jpg" alt="img">
+
+        <h1 class="heading">BILL CALCULATOR</h1>
+
+        <p class="label-text">Bill Amount :</p>
+        <input class="enterbill" id="billAmount" placeholder="Enter Amt.">
+
+        <p class="label-text">Discount(%) :</p>
+        <input class="enterbill" id="discountPercentage" placeholder=" Enter No.">
+
+        <p class="label-text">Tip Amount :</p>
+        <input class="enterbill" id="tipAmount" placeholder=" Enter Amt.">
+
+        <div>
+            <button id="enter" onclick="calculate()">Total</button>
+            <button id="clear" onclick="clearInputs()">Clear</button>
+        </div>
+
+        <p class="message" id="error" type="text"></p>
+
+        <p class="label-text"><B>Total Amount </B>(18% GST Included)</p>
+        <input class="enterbill" id="totalAmount" placeholder="" readonly>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
